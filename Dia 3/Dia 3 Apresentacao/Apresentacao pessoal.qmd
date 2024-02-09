@@ -1,0 +1,43 @@
+---
+title: "Apresentacao Pessoal"
+author: "Bruce Kpade"
+format: revealjs
+incremental: true
+---
+
+# Technologia
+
+Mecanizacao
+
+## Sistemas e tecnologias
+
+As tecnologias presentes nas colhedoras de grãos podem proporcionar ganhos em eficiência, porém entender o seu funcionamento e dominar ajustes e calibrações é fundamental
+
+## AS COLHEDORAS DE GRÃOS
+
+-   Já plataformas flexíveis são capazes de executar movimentos de subida, descida e inclinação, a fim de reproduzirem a topografia do terreno onde atuam.
+-   Estas plataformas de corte flexíveis são empregadas principalmente para colheita de leguminosas fabaceae
+
+## SISTEMA DE ALIMENTAÇÃO
+
+::: columns
+::: {.column width="40%"}
+A condução após o corte ou arranquio do produto pode ser realizada de duas maneiras, através do caracol transportador ou da esteira tipo “draper” (ABNT, 1987).
+:::
+
+::: {.column width="60%"}
+![](images/_de7c3430-debf-4d6f-b2d9-d19d7598bc7a.jpg)
+:::
+:::
+
+## SISTEMA DE TRILHA
+
+O sistema de separação desmembra o fluxo na máquina entre o grão sujo de palhiço, que segue para o sistema de limpeza, e o fluxo de palha, que segue para a traseira, até ser jogado para fora da máquina. Na trilha de fluxo axial a separação acontece entre o rotor e o cilindro separador, no mesmo corpo do sistema de trilha.
+
+```{mermaid}
+%%| fig-width: 6.5
+flowchart LR
+  A[Sistema] --> B(ALIMENTAÇÃO)
+  B --> C(TRILHA)
+  C --> D{Decision}
+```

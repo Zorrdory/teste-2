@@ -1,0 +1,65 @@
+---
+title: "Dia 1"
+author: "Bruce"
+format: html
+bibliography: references.bib
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+| Col1 | Col2 | Col3 |
+|------|------|------|
+|      |      |      |
+|      |      |      |
+|      |      |      |
+
+Exemplo de tabela
+
+$$
+\nabla patos = ovo
+$$ {#eq-patos}
+
+Na equacao @eq-patos falamos do codigo
+
+```{r}
+penguins |>
+  mutate(tamanho_nadadeira =
+           if_else(flipper_length_mm > 200, "longa", "curta")) |>
+  filter(!is.na(tamanho_nadadeira)) |>
+  summarise(media_bico = mean(bill_length_mm),
+            desv_pad_bico = sd(bill_length_mm),
+            .by = tamanho_nadadeira)
+```
+
+| Col1  | Col2 |
+|-------|------|
+| 12345 | ABDC |
+| 5432  | DCRS |
+
+: Linhagens
+
+$$
+\nabla Soma (1+1)=2
+$$ {#eq-soma}
+
+Info importante de [@Singh2016] em 2016 e [@Martins2022]

@@ -1,0 +1,19 @@
+{
+  "hash": "217c0331d633b405feb20a9a11daed8b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Apresentacao Pessoal\"\nauthor: \"Bruce Kpade\"\nformat: revealjs\nincremental: true\n---\n\n# Technologia\nMecanizacao \n\n## Sistemas e tecnologias\n\nAs tecnologias presentes nas colhedoras de grãos podem proporcionar ganhos em eficiência, porém entender o seu funcionamento e dominar ajustes e calibrações é fundamental\n\n## AS COLHEDORAS DE GRÃOS\n\n-   Já plataformas flexíveis são capazes de executar movimentos de subida, descida e inclinação, a fim de reproduzirem a topografia do terreno onde atuam.\n-   Estas plataformas de corte flexíveis são empregadas principalmente para colheita de leguminosas fabaceae\n\n## SISTEMA DE ALIMENTAÇÃO\n\n::: columns\n::: {.column width=\"40%\"}\nA condução após o corte ou arranquio do produto pode ser realizada de duas maneiras, através do caracol transportador ou da esteira tipo “draper” (ABNT, 1987).\n:::\n\n::: {.column width=\"60%\"}\n![](images/_de7c3430-debf-4d6f-b2d9-d19d7598bc7a.jpg)\n:::\n:::\n\n## SISTEMA DE TRILHA\n\nWhen you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    // dispatch for htmlwidgets\n    function fireSlideEnter() {\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n    }\n\n    function fireSlideChanged(previousSlide, currentSlide) {\n      fireSlideEnter();\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
